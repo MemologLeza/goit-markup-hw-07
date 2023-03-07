@@ -296,6 +296,7 @@ button {
     url(../images/main_page/hero/bg-img_mob@1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
@@ -309,7 +310,7 @@ button {
       url(../images/main_page/hero/bg-img_mob@2x.jpg);
   }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -330,7 +331,7 @@ button {
     }
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -455,6 +456,7 @@ button {
     font-weight: 500;
     font-size: 20px;
     line-height: calc(24 / 20);
+    text-align: left;
   }
 }
 
@@ -695,6 +697,13 @@ button {
   }
 }
 .footer-logo {
+  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    text-align: left;
+  }
 }
 .footer-logo-part {
   color: var(--cloud-cl);
@@ -1188,7 +1197,7 @@ button {
 }
 .mobile-menu-social-list {
   display: flex;
-  gap: 56px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding-right: 10px;
 }
