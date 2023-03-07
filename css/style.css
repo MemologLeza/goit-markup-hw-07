@@ -451,12 +451,16 @@ button {
   text-transform: capitalize;
   margin-bottom: 8px;
 }
+@media screen and (min-width: 768px) {
+  .main-item-title {
+    text-align: left;
+  }
+}
 @media screen and (min-width: 1200px) {
   .main-item-title {
     font-weight: 500;
     font-size: 20px;
     line-height: calc(24 / 20);
-    text-align: left;
   }
 }
 
